@@ -1,0 +1,15 @@
+/*______________________________
+         Top Level
+  ______________________________*/
+  
+  module top_level ();
+		
+				reg Clk, reset;
+
+	// Data Memory Wires
+		wire [31:0]  ReadData_DataMem;
+		wire [31:0]  Address_DataMem;
+		wire [31:0]  WriteData_DataMem;
+		wire 			 MemWrite, MemRead;
+		
+	endmodule 

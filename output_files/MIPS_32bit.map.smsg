@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at data_memory.v(21): always construct contains both blocking and non-blocking assignments File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v Line: 21

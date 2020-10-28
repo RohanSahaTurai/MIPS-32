@@ -1,0 +1,16 @@
+/*______________________________
+         1-bit full adder
+  ______________________________*/
+  
+`timescale 1 ps / 100 fs
+
+module adder_1bit (Sum, C_out, A, B, C_in);
+	
+	input 	A, B, C_in;
+	output	Sum, C_out;
+	
+	assign Sum 	 = (A ^ B) ^ C_in;
+	assign C_out = (A & B) | C_in & (A ^ B);
+	
+endmodule
+	

@@ -1,0 +1,247 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/simulation/qsim
+valpha
+Z1 !s110 1602002782
+!i10b 1
+!s100 nFMl^]RPm902Nm:IM9^0l2
+I?9X:?A[L3<X1KB[e]5?9C2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1602002781
+Z3 8MIPS_32bit.vo
+Z4 FMIPS_32bit.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1602002782.000000
+Z8 !s107 MIPS_32bit.vo|
+Z9 !s90 -work|work|MIPS_32bit.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+valpha_vlg_vec_tst
+R1
+!i10b 1
+!s100 R^;7gV^[Azz17VAenFG4f1
+IBlZk3GjMN=mG^Y9_BG_Ve0
+R2
+R0
+w1602002780
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+Z14 L0 29
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vALU_32bit
+Z17 !s110 1600452126
+!i10b 1
+!s100 g:Xoe]JhUGK?>gB1JI7M40
+I5B89:dF:_c4mf:]M05<HO1
+R2
+R0
+w1600452125
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1600452126.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@a@l@u_32bit
+vALU_32bit_vlg_vec_tst
+R17
+!i10b 1
+!s100 3KdP][jiLb6]1PnmE^3@L1
+ITRYJlO;MFK@S?6ioc;?2V3
+R2
+R0
+w1600452124
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R10
+R11
+n@a@l@u_32bit_vlg_vec_tst
+vALU_Control
+Z19 !s110 1602040257
+!i10b 1
+!s100 m]_L]ElbXmJJO2V2cnMfU2
+IWa79_TH6Fo@Wma6?jS@Z40
+R2
+R0
+w1602040256
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1602040257.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@a@l@u_@control
+vALU_Control_vlg_vec_tst
+R19
+!i10b 1
+!s100 oT25o4kl82zDF]:dYzG4i0
+IkNXT5]jz_G?NoVAKB?jFS3
+R2
+R0
+w1602040255
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R20
+R15
+R16
+!i113 1
+R10
+R11
+n@a@l@u_@control_vlg_vec_tst
+vdatapath
+Z21 !s110 1601997578
+!i10b 1
+!s100 1e3f>g_8C_2:23TGCgW5h3
+IE[AZ0zGL1WdU^2RQ=QEgC2
+R2
+R0
+w1601997577
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1601997578.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdatapath_vlg_vec_tst
+R21
+!i10b 1
+!s100 FC>Uj3Ro8HKeme=T@0Y7c1
+I`<<VK>@X:Ue6fm=KZTCgg0
+R2
+R0
+w1601997576
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R22
+R15
+R16
+!i113 1
+R10
+R11
+vhard_block
+Z23 !s110 1603382120
+!i10b 1
+!s100 kK[_<1B:N1]T2Kd_A9:HC2
+I2Sa^olS^ja2:N0>fUneYi1
+R2
+R0
+Z24 w1603382119
+R3
+R4
+L0 1060
+R6
+r1
+!s85 0
+31
+Z25 !s108 1603382120.000000
+R8
+R9
+!i113 1
+R10
+R11
+vInstruction_memory
+R23
+!i10b 1
+!s100 e@T:AQ71?lUah27]0Eo=92
+IG5V@EDc_NdD<B50_S9ILa3
+R2
+R0
+R24
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+R25
+R8
+R9
+!i113 1
+R10
+R11
+n@instruction_memory
+vInstruction_memory_vlg_vec_tst
+!s110 1603382121
+!i10b 1
+!s100 ;D[jR8?2jLB@E3N=UbN5:3
+Iz9l8moV9PAn0mIi==oAjF3
+R2
+R0
+R24
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+!s108 1603382121.000000
+R15
+R16
+!i113 1
+R10
+R11
+n@instruction_memory_vlg_vec_tst

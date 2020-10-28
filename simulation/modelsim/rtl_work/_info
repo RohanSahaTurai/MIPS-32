@@ -1,0 +1,370 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/simulation/modelsim
+vadder_1bit
+Z1 !s110 1603922109
+!i10b 1
+!s100 <:H=AzKNDknCXJNEVRMSM3
+I^6g1Jk0WHV>P?9<Mi8ZY31
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1603906925
+Z4 8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v
+Z5 FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v
+L0 165
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1603922109.000000
+Z8 !s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work {+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit}
+Z12 tCvgOpt 0
+vALU_1bit
+R1
+!i10b 1
+!s100 >Z9]OcDiDOFO@JG4QP_LY3
+IBlzRH8KI>ob78zN_kAPR?1
+R2
+R0
+R3
+R4
+R5
+L0 121
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@a@l@u_1bit
+vALU_1bit_MSB
+R1
+!i10b 1
+!s100 @AHMokH7j]5I[XO[o@[T10
+IWO9M6<:k[TR[eH@R3^9=b0
+R2
+R0
+R3
+R4
+R5
+L0 73
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@a@l@u_1bit_@m@s@b
+vALU_32bit
+R1
+!i10b 1
+!s100 n`K[0OCnKML=V[<=067Z]3
+ITe_Zc=l7QB;QPT:PmhCiN3
+R2
+R0
+R3
+R4
+R5
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@a@l@u_32bit
+vALU_Control
+R1
+!i10b 1
+!s100 U[UKGbio2eD0EMFI1Pm@00
+IVon0[liHjhaITPcVA_Kn73
+R2
+R0
+w1603920679
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v
+L0 17
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v|
+!i113 1
+R10
+R11
+R12
+n@a@l@u_@control
+vControl_Unit
+R1
+!i10b 1
+!s100 67GAX4`NTUSTf?GJR6:Ii2
+I:>;=JXj<fbh_Pb[o]1:i01
+R2
+R0
+w1603921135
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Control_Unit.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Control_Unit.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Control_Unit.v|
+!i113 1
+R10
+R11
+R12
+n@control_@unit
+vdata_memory
+Z13 !s110 1603922108
+!i10b 1
+!s100 Ri8M5CDgY_K@GJX_nX9[_2
+I]a>fS>imejCFD=z3L:TH13
+R2
+R0
+w1603906005
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v
+L0 7
+R6
+r1
+!s85 0
+31
+Z14 !s108 1603922108.000000
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v|
+!i113 1
+R10
+R11
+R12
+vInstruction_memory
+R1
+!i10b 1
+!s100 6Tk5hK<kOi3V3JD5X=M`j2
+ISbI6J7<HCLgR6?iJhQ@9]1
+R2
+R0
+w1603839018
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v|
+!i113 1
+R10
+R11
+R12
+n@instruction_memory
+vMIPS_32bit
+R13
+!i10b 1
+!s100 WKXQ32BiXdaM378?<ZQIb3
+Ik=@`hK1[C4i`zcYgANHZF1
+R2
+R0
+w1603921649
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v
+L0 7
+R6
+r1
+!s85 0
+31
+R14
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v|
+!i113 1
+R10
+R11
+R12
+n@m@i@p@s_32bit
+vmux_4x1
+R1
+!i10b 1
+!s100 FY;8:^VhRI8U81A`H1he@1
+IZbZbVBX[c>E2@j;Ak=HQZ3
+R2
+R0
+R3
+R4
+R5
+L0 187
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vregister_file
+R1
+!i10b 1
+!s100 nA?mWd4JP]B@6cjm6Xh?h1
+IZH2gm_5DDT]zRdGP=KJCP0
+R2
+R0
+w1603905661
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v|
+!i113 1
+R10
+R11
+R12
+vtest
+R1
+!i10b 1
+!s100 E3FnJ680^R:36A842TbMB1
+IR><DZME0^]Ko>zHWA46GN0
+R2
+R0
+Z15 w1603921714
+Z16 8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v
+Z17 FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+Z18 !s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v|
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v|
+!i113 1
+R10
+R11
+R12
+vtest_ALU
+R1
+!i10b 1
+!s100 YKkCG8P67J[5aP9m4>3O@1
+I8IbQm:8`L>T_7CNY<2mWZ0
+R2
+R0
+R15
+R16
+R17
+L0 151
+R6
+r1
+!s85 0
+31
+R7
+R18
+R19
+!i113 1
+R10
+R11
+R12
+ntest_@a@l@u
+vtest_inst_mem
+R1
+!i10b 1
+!s100 ^[@2XFa18lFA:_BAN3PY22
+IGEBkQ8JCZlNJ:hdaaL:f11
+R2
+R0
+R15
+R16
+R17
+L0 126
+R6
+r1
+!s85 0
+31
+R7
+R18
+R19
+!i113 1
+R10
+R11
+R12
+vtest_reg_file
+R1
+!i10b 1
+!s100 cL4THgnmUTEK;`hG@9iA?3
+I<MHd_=f@=fc]]H<KN:TR23
+R2
+R0
+R15
+R16
+R17
+L0 55
+R6
+r1
+!s85 0
+31
+R7
+R18
+R19
+!i113 1
+R10
+R11
+R12
+vtop_level
+R1
+!i10b 1
+!s100 ejGa^DZ6BFI6GnUdLSXWf2
+IQl<XUW@2CaV:P_921SA]62
+R2
+R0
+w1603921701
+8E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v
+FE:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit|E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v|
+!i113 1
+R10
+R11
+R12

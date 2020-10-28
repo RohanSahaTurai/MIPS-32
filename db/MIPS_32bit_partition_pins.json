@@ -1,0 +1,577 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ReadData_DataMem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ReadData_DataMem[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Address_DataMem[31]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteData_DataMem[31]",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
+					"strict" : false
+				},
+				{
+					"name" : "MemRead",
+					"strict" : false
+				},
+				{
+					"name" : "RegDst",
+					"strict" : false
+				},
+				{
+					"name" : "Jump",
+					"strict" : false
+				},
+				{
+					"name" : "JAL",
+					"strict" : false
+				},
+				{
+					"name" : "Branch",
+					"strict" : false
+				},
+				{
+					"name" : "MemToReg",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrc",
+					"strict" : false
+				},
+				{
+					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "JR",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

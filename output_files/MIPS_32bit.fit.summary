@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Oct 29 08:49:09 2020
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : MIPS_32bit
+Top-level Entity Name : top_level
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 495 / 6,272 ( 8 % )
+    Total combinational functions : 494 / 6,272 ( 8 % )
+    Dedicated logic registers : 96 / 6,272 ( 2 % )
+Total registers : 96
+Total pins : 142 / 180 ( 79 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 276,480 ( 6 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

@@ -69,117 +69,117 @@ CHIP  "MIPS_32bit"  ASSIGNED TO AN: EP4CE6F17C8
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-PC[16]                       : A2        : output : 2.5 V             :         : 8         : N              
-PC[10]                       : A3        : output : 2.5 V             :         : 8         : N              
-PC[18]                       : A4        : output : 2.5 V             :         : 8         : N              
-PC[0]                        : A5        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
-PC[23]                       : A7        : output : 2.5 V             :         : 8         : N              
-PC[9]                        : A8        : output : 2.5 V             :         : 8         : N              
-PC[26]                       : A9        : output : 2.5 V             :         : 7         : N              
-Address_DataMem[24]          : A10       : output : 2.5 V             :         : 7         : N              
-Address_DataMem[7]           : A11       : output : 2.5 V             :         : 7         : N              
-Address_DataMem[6]           : A12       : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[28]        : A13       : output : 2.5 V             :         : 7         : N              
-ReadData_DataMem[26]         : A14       : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[7]         : A15       : output : 2.5 V             :         : 7         : N              
+PC[7]                        : A2        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+ReadData_DataMem[16]         : A4        : output : 2.5 V             :         : 8         : N              
+PC[1]                        : A5        : output : 2.5 V             :         : 8         : N              
+PC[14]                       : A6        : output : 2.5 V             :         : 8         : N              
+PC[25]                       : A7        : output : 2.5 V             :         : 8         : N              
+PC[13]                       : A8        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[13]          : A9        : output : 2.5 V             :         : 7         : N              
+PC[22]                       : A10       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[24]         : A11       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[12]         : A12       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[13]         : A13       : output : 2.5 V             :         : 7         : N              
+WriteData_DataMem[18]        : A14       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[0]          : A15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
+WriteData_DataMem[31]        : B1        : output : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-PC[13]                       : B3        : output : 2.5 V             :         : 8         : N              
-PC[2]                        : B4        : output : 2.5 V             :         : 8         : N              
-PC[12]                       : B5        : output : 2.5 V             :         : 8         : N              
-PC[17]                       : B6        : output : 2.5 V             :         : 8         : N              
-PC[15]                       : B7        : output : 2.5 V             :         : 8         : N              
-PC[30]                       : B8        : output : 2.5 V             :         : 8         : N              
-WriteData_DataMem[3]         : B9        : output : 2.5 V             :         : 7         : N              
-Address_DataMem[22]          : B10       : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[0]         : B11       : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[1]         : B12       : output : 2.5 V             :         : 7         : N              
-ReadData_DataMem[24]         : B13       : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[26]        : B14       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+WriteData_DataMem[10]        : B5        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[16]          : B6        : output : 2.5 V             :         : 8         : N              
+PC[17]                       : B7        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[24]          : B8        : output : 2.5 V             :         : 8         : N              
+PC[27]                       : B9        : output : 2.5 V             :         : 7         : N              
+PC[23]                       : B10       : output : 2.5 V             :         : 7         : N              
+PC[0]                        : B11       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[8]          : B12       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[21]         : B13       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[6]          : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-ReadData_DataMem[29]         : B16       : output : 2.5 V             :         : 6         : N              
+Address_DataMem[1]           : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-Address_DataMem[3]           : C2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-PC[3]                        : C6        : output : 2.5 V             :         : 8         : N              
+PC[16]                       : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-PC[27]                       : C8        : output : 2.5 V             :         : 8         : N              
-PC[24]                       : C9        : output : 2.5 V             :         : 7         : N              
+PC[18]                       : C8        : output : 2.5 V             :         : 8         : N              
+PC[20]                       : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-Address_DataMem[30]          : C11       : output : 2.5 V             :         : 7         : N              
+Address_DataMem[10]          : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-Address_DataMem[29]          : C15       : output : 2.5 V             :         : 6         : N              
-Address_DataMem[5]           : C16       : output : 2.5 V             :         : 6         : N              
-Address_DataMem[31]          : D1        : output : 2.5 V             :         : 1         : N              
+ReadData_DataMem[9]          : C14       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[23]         : C15       : output : 2.5 V             :         : 6         : N              
+WriteData_DataMem[23]        : C16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
-ALUOp[1]                     : D4        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 1         :                
+PC[2]                        : D5        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
 GND                          : D7        : gnd    :                   :         :           :                
-PC[8]                        : D8        : output : 2.5 V             :         : 8         : N              
-WriteData_DataMem[9]         : D9        : output : 2.5 V             :         : 7         : N              
+PC[28]                       : D8        : output : 2.5 V             :         : 8         : N              
+PC[24]                       : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 7         :                
-WriteData_DataMem[25]        : D12       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[7]          : D11       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[18]         : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-WriteData_DataMem[12]        : D14       : output : 2.5 V             :         : 7         : N              
-ReadData_DataMem[28]         : D15       : output : 2.5 V             :         : 6         : N              
-WriteData_DataMem[23]        : D16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
+ReadData_DataMem[19]         : D15       : output : 2.5 V             :         : 6         : N              
+ReadData_DataMem[10]         : D16       : output : 2.5 V             :         : 6         : N              
 Clk                          : E1        : input  : 2.5 V             :         : 1         : N              
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
-PC[7]                        : E7        : output : 2.5 V             :         : 8         : N              
-PC[4]                        : E8        : output : 2.5 V             :         : 8         : N              
-PC[20]                       : E9        : output : 2.5 V             :         : 7         : N              
-Address_DataMem[25]          : E10       : output : 2.5 V             :         : 7         : N              
-ReadData_DataMem[7]          : E11       : output : 2.5 V             :         : 7         : N              
+Address_DataMem[7]           : E6        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[21]          : E7        : output : 2.5 V             :         : 8         : N              
+JR                           : E8        : output : 2.5 V             :         : 8         : N              
+PC[21]                       : E9        : output : 2.5 V             :         : 7         : N              
+WriteData_DataMem[17]        : E10       : output : 2.5 V             :         : 7         : N              
+ReadData_DataMem[11]         : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 GND+                         : E15       :        :                   :         : 6         :                
 GND+                         : E16       :        :                   :         : 6         :                
-PC[5]                        : F1        : output : 2.5 V             :         : 1         : N              
-PC[29]                       : F2        : output : 2.5 V             :         : 1         : N              
-RegDst                       : F3        : output : 2.5 V             :         : 1         : N              
+Address_DataMem[14]          : F1        : output : 2.5 V             :         : 1         : N              
+WriteData_DataMem[24]        : F2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
 nSTATUS                      : F4        :        :                   :         : 1         :                
-Jump                         : F5        : output : 2.5 V             :         : 1         : N              
-PC[21]                       : F6        : output : 2.5 V             :         : 8         : N              
-PC[22]                       : F7        : output : 2.5 V             :         : 8         : N              
-PC[28]                       : F8        : output : 2.5 V             :         : 8         : N              
-Address_DataMem[4]           : F9        : output : 2.5 V             :         : 7         : N              
-WriteData_DataMem[5]         : F10       : output : 2.5 V             :         : 7         : N              
-Address_DataMem[26]          : F11       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
+PC[10]                       : F6        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[8]           : F7        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[30]          : F8        : output : 2.5 V             :         : 8         : N              
+Address_DataMem[11]          : F9        : output : 2.5 V             :         : 7         : N              
+Address_DataMem[12]          : F10       : output : 2.5 V             :         : 7         : N              
+Address_DataMem[18]          : F11       : output : 2.5 V             :         : 7         : N              
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-ReadData_DataMem[6]          : F13       : output : 2.5 V             :         : 6         : N              
-ReadData_DataMem[4]          : F14       : output : 2.5 V             :         : 6         : N              
-WriteData_DataMem[31]        : F15       : output : 2.5 V             :         : 6         : N              
+ReadData_DataMem[3]          : F13       : output : 2.5 V             :         : 6         : N              
+WriteData_DataMem[25]        : F14       : output : 2.5 V             :         : 6         : N              
+Address_DataMem[3]           : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-PC[14]                       : G1        : output : 2.5 V             :         : 1         : N              
-PC[1]                        : G2        : output : 2.5 V             :         : 1         : N              
+PC[6]                        : G1        : output : 2.5 V             :         : 1         : N              
+PC[5]                        : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-PC[11]                       : G5        : output : 2.5 V             :         : 1         : N              
+ReadData_DataMem[17]         : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
 VCCINT                       : G9        : power  :                   : 1.2V    :           :                
 VCCINT                       : G10       : power  :                   : 1.2V    :           :                
-WriteData_DataMem[29]        : G11       : output : 2.5 V             :         : 6         : N              
+ReadData_DataMem[1]          : G11       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-ReadData_DataMem[31]         : G15       : output : 2.5 V             :         : 6         : N              
-Address_DataMem[0]           : G16       : output : 2.5 V             :         : 6         : N              
+WriteData_DataMem[19]        : G15       : output : 2.5 V             :         : 6         : N              
+WriteData_DataMem[20]        : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -196,131 +196,131 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-PC[19]                       : J1        : output : 2.5 V             :         : 2         : N              
-RegWrite                     : J2        : output : 2.5 V             :         : 2         : N              
+PC[8]                        : J1        : output : 2.5 V             :         : 2         : N              
+PC[4]                        : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
-PC[6]                        : J6        : output : 2.5 V             :         : 2         : N              
+PC[3]                        : J6        : output : 2.5 V             :         : 2         : N              
 GND                          : J7        : gnd    :                   :         :           :                
 GND                          : J8        : gnd    :                   :         :           :                
 GND                          : J9        : gnd    :                   :         :           :                
 GND                          : J10       : gnd    :                   :         :           :                
-ReadData_DataMem[17]         : J11       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[25]         : J12       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[30]         : J13       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[21]         : J14       : output : 2.5 V             :         : 5         : N              
-WriteData_DataMem[21]        : J15       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[0]          : J16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 2         :                
+WriteData_DataMem[8]         : J11       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[7]         : J12       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[16]        : J13       : output : 2.5 V             :         : 5         : N              
+Jump                         : J14       : output : 2.5 V             :         : 5         : N              
+MemWrite                     : J15       : output : 2.5 V             :         : 5         : N              
+Address_DataMem[19]          : J16       : output : 2.5 V             :         : 5         : N              
+ReadData_DataMem[22]         : K1        : output : 2.5 V             :         : 2         : N              
+PC[31]                       : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-WriteData_DataMem[6]         : K5        : output : 2.5 V             :         : 2         : N              
-WriteData_DataMem[11]        : K6        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+Address_DataMem[31]          : K6        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
-Branch                       : K8        : output : 2.5 V             :         : 3         : N              
-WriteData_DataMem[2]         : K9        : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[1]          : K10       : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[15]        : K11       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[2]          : K12       : output : 2.5 V             :         : 5         : N              
+PC[30]                       : K8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K9        :        :                   :         : 4         :                
+WriteData_DataMem[30]        : K10       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[5]         : K11       : output : 2.5 V             :         : 5         : N              
+Address_DataMem[0]           : K12       : output : 2.5 V             :         : 5         : N              
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-ReadData_DataMem[8]          : K15       : output : 2.5 V             :         : 5         : N              
-WriteData_DataMem[22]        : K16       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[2]         : K15       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[9]         : K16       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 2         :                
-PC[31]                       : L2        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 2         :                
-WriteData_DataMem[18]        : L4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 2         :                
+Address_DataMem[22]          : L3        : output : 2.5 V             :         : 2         : N              
+Address_DataMem[2]           : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
-PC[25]                       : L6        : output : 2.5 V             :         : 2         : N              
-ALUOp[0]                     : L7        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[28]          : L8        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[21]          : L9        : output : 2.5 V             :         : 4         : N              
-Address_DataMem[16]          : L10       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[9]          : L11       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[27]         : L12       : output : 2.5 V             :         : 5         : N              
-WriteData_DataMem[24]        : L13       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[20]         : L14       : output : 2.5 V             :         : 5         : N              
-WriteData_DataMem[27]        : L15       : output : 2.5 V             :         : 5         : N              
-Address_DataMem[14]          : L16       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[13]        : L6        : output : 2.5 V             :         : 2         : N              
+PC[26]                       : L7        : output : 2.5 V             :         : 3         : N              
+Address_DataMem[27]          : L8        : output : 2.5 V             :         : 3         : N              
+ReadData_DataMem[30]         : L9        : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[28]        : L10       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[26]        : L11       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[20]         : L12       : output : 2.5 V             :         : 5         : N              
+Address_DataMem[5]           : L13       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[22]        : L14       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[3]         : L15       : output : 2.5 V             :         : 5         : N              
+RegWrite                     : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 Reset                        : M2        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-ReadData_DataMem[3]          : M6        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3         :                
-Address_DataMem[2]           : M8        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[10]          : M9        : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[16]         : M10       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[5]          : M11       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[18]         : M12       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 3         :                
+PC[12]                       : M7        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 3         :                
+Address_DataMem[26]          : M9        : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[15]        : M10       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[26]         : M11       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[4]          : M12       : output : 2.5 V             :         : 5         : N              
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
-MemWrite                     : N2        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N2        :        :                   :         : 2         :                
+WriteData_DataMem[11]        : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
-WriteData_DataMem[13]        : N5        : output : 2.5 V             :         : 3         : N              
+PC[19]                       : N5        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 3         :                
 GND                          : N7        : gnd    :                   :         :           :                
-Address_DataMem[19]          : N8        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[12]          : N9        : output : 2.5 V             :         : 4         : N              
+Address_DataMem[23]          : N8        : output : 2.5 V             :         : 3         : N              
+Address_DataMem[28]          : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-Address_DataMem[1]           : N11       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
-ReadData_DataMem[11]         : N13       : output : 2.5 V             :         : 5         : N              
-WriteData_DataMem[4]         : N14       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[12]         : N15       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[19]         : N16       : output : 2.5 V             :         : 5         : N              
-Address_DataMem[23]          : P1        : output : 2.5 V             :         : 2         : N              
+WriteData_DataMem[21]        : N11       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[6]         : N12       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[29]        : N13       : output : 2.5 V             :         : 5         : N              
+ReadData_DataMem[25]         : N14       : output : 2.5 V             :         : 5         : N              
+ReadData_DataMem[29]         : N15       : output : 2.5 V             :         : 5         : N              
+ReadData_DataMem[2]          : N16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
+WriteData_DataMem[12]        : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3         :                
+PC[29]                       : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-MemToReg                     : P8        : output : 2.5 V             :         : 3         : N              
-ReadData_DataMem[22]         : P9        : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3         :                
+WriteData_DataMem[1]         : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-WriteData_DataMem[8]         : P11       : output : 2.5 V             :         : 4         : N              
+ALUOp[1]                     : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-ReadData_DataMem[10]         : P14       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[5]          : P14       : output : 2.5 V             :         : 4         : N              
 Address_DataMem[20]          : P15       : output : 2.5 V             :         : 5         : N              
-ReadData_DataMem[14]         : P16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+WriteData_DataMem[14]        : P16       : output : 2.5 V             :         : 5         : N              
+ReadData_DataMem[15]         : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3         :                
-ALUSrc                       : R4        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[9]           : R5        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 3         :                
-MemRead                      : R7        : output : 2.5 V             :         : 3         : N              
-WriteData_DataMem[14]        : R8        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[13]          : R9        : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[30]        : R10       : output : 2.5 V             :         : 4         : N              
-Address_DataMem[17]          : R11       : output : 2.5 V             :         : 4         : N              
-Address_DataMem[18]          : R12       : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[17]        : R13       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[23]         : R14       : output : 2.5 V             :         : 4         : N              
+Address_DataMem[6]           : R4        : output : 2.5 V             :         : 3         : N              
+Address_DataMem[15]          : R5        : output : 2.5 V             :         : 3         : N              
+Address_DataMem[9]           : R6        : output : 2.5 V             :         : 3         : N              
+PC[15]                       : R7        : output : 2.5 V             :         : 3         : N              
+ReadData_DataMem[31]         : R8        : output : 2.5 V             :         : 3         : N              
+PC[11]                       : R9        : output : 2.5 V             :         : 4         : N              
+MemToReg                     : R10       : output : 2.5 V             :         : 4         : N              
+Address_DataMem[4]           : R11       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[4]         : R12       : output : 2.5 V             :         : 4         : N              
+WriteData_DataMem[27]        : R13       : output : 2.5 V             :         : 4         : N              
+Branch                       : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-ReadData_DataMem[15]         : R16       : output : 2.5 V             :         : 5         : N              
+WriteData_DataMem[0]         : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T2        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 3         :                
+ALUSrc                       : T2        : output : 2.5 V             :         : 3         : N              
+ReadData_DataMem[27]         : T3        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3         :                
-WriteData_DataMem[16]        : T7        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[8]           : T8        : output : 2.5 V             :         : 3         : N              
-Address_DataMem[11]          : T9        : output : 2.5 V             :         : 4         : N              
-Address_DataMem[15]          : T10       : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[20]        : T11       : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[10]        : T12       : output : 2.5 V             :         : 4         : N              
-ReadData_DataMem[13]         : T13       : output : 2.5 V             :         : 4         : N              
-WriteData_DataMem[19]        : T14       : output : 2.5 V             :         : 4         : N              
-Address_DataMem[27]          : T15       : output : 2.5 V             :         : 4         : N              
+PC[9]                        : T5        : output : 2.5 V             :         : 3         : N              
+Address_DataMem[25]          : T6        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
+Address_DataMem[29]          : T9        : output : 2.5 V             :         : 4         : N              
+Address_DataMem[17]          : T10       : output : 2.5 V             :         : 4         : N              
+MemRead                      : T11       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[14]         : T12       : output : 2.5 V             :         : 4         : N              
+RegDst                       : T13       : output : 2.5 V             :         : 4         : N              
+ReadData_DataMem[28]         : T14       : output : 2.5 V             :         : 4         : N              
+ALUOp[0]                     : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

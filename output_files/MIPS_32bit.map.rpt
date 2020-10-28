@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_32bit
-Thu Oct 29 09:15:40 2020
+Thu Oct 29 09:45:37 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -83,16 +83,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 29 09:15:40 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 29 09:45:37 2020       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_32bit                                  ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,653                                       ;
-;     Total combinational functions  ; 1,693                                       ;
+; Total logic elements               ; 2,680                                       ;
+;     Total combinational functions  ; 1,720                                       ;
 ;     Dedicated logic registers      ; 1,024                                       ;
 ; Total registers                    ; 1024                                        ;
-; Total pins                         ; 140                                         ;
+; Total pins                         ; 141                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -243,31 +243,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,653     ;
+; Estimated Total logic elements              ; 2,680     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1693      ;
+; Total combinational functions               ; 1720      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1492      ;
-;     -- 3 input functions                    ; 158       ;
-;     -- <=2 input functions                  ; 43        ;
+;     -- 4 input functions                    ; 1524      ;
+;     -- 3 input functions                    ; 124       ;
+;     -- <=2 input functions                  ; 72        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1631      ;
+;     -- normal mode                          ; 1658      ;
 ;     -- arithmetic mode                      ; 62        ;
 ;                                             ;           ;
 ; Total registers                             ; 1024      ;
 ;     -- Dedicated logic registers            ; 1024      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 140       ;
+; I/O pins                                    ; 141       ;
 ; Total memory bits                           ; 16384     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
 ; Maximum fan-out                             ; 1088      ;
-; Total fan-out                               ; 10601     ;
-; Average fan-out                             ; 3.46      ;
+; Total fan-out                               ; 10647     ;
+; Average fan-out                             ; 3.45      ;
 +---------------------------------------------+-----------+
 
 
@@ -276,110 +276,111 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                ; Entity Name        ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |top_level                                   ; 1693 (0)            ; 1024 (0)                  ; 16384       ; 0            ; 0       ; 0         ; 140  ; 0            ; |top_level                                                                                                         ; top_level          ; work         ;
-;    |MIPS_32bit:mips_core|                    ; 1693 (177)          ; 1024 (32)                 ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core                                                                                    ; MIPS_32bit         ; work         ;
-;       |ALU_32bit:ALU|                        ; 812 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU                                                                      ; ALU_32bit          ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[10].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[10].alu                                    ; ALU_1bit           ; work         ;
+; |top_level                                   ; 1720 (0)            ; 1024 (0)                  ; 16384       ; 0            ; 0       ; 0         ; 141  ; 0            ; |top_level                                                                                                         ; top_level          ; work         ;
+;    |MIPS_32bit:mips_core|                    ; 1720 (206)          ; 1024 (32)                 ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core                                                                                    ; MIPS_32bit         ; work         ;
+;       |ALU_32bit:ALU|                        ; 164 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU                                                                      ; ALU_32bit          ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[10].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[10].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[10].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[10].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[11].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[11].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[11].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[11].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[11].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[11].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[12].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[12].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[12].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[12].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[12].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[12].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[13].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[13].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[13].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[13].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[13].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[13].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[14].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[14].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[14].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[14].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[14].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[14].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[15].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[15].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[15].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[15].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[15].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[15].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[16].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[16].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[16].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[16].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[16].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[16].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[17].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[17].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[17].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[17].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[17].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[17].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[18].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[18].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[18].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[18].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[18].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[18].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[19].alu| ; 30 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[19].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[19].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[19].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[19].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[19].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[1].alu|  ; 26 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[1].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[1].alu|  ; 6 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[1].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[1].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[1].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[20].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[20].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[20].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[20].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[20].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[20].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[21].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[21].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[21].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[21].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[21].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[21].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[22].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[22].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[22].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[22].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[22].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[22].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[23].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[23].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[23].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[23].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[23].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[23].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[24].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[24].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[24].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[24].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[24].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[24].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[25].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[25].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[25].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[25].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[25].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[25].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[26].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[26].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[26].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[26].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[26].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[26].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[27].alu| ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[27].alu                                    ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[27].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[27].alu                                    ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[27].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[27].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[28].alu| ; 26 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu                                    ; ALU_1bit           ; work         ;
-;             |adder_1bit:adder|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
-;             |mux_4x1:opMUX|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[29].alu| ; 26 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu                                    ; ALU_1bit           ; work         ;
-;             |adder_1bit:adder|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
-;             |mux_4x1:opMUX|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[2].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[2].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[28].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu                                    ; ALU_1bit           ; work         ;
+;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
+;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[28].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[29].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu                                    ; ALU_1bit           ; work         ;
+;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
+;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[29].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[2].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[2].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[2].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[2].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[30].alu| ; 26 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu                                    ; ALU_1bit           ; work         ;
-;             |adder_1bit:adder|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
-;             |mux_4x1:opMUX|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[3].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[3].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[30].alu| ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu                                    ; ALU_1bit           ; work         ;
+;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu|adder_1bit:adder                   ; adder_1bit         ; work         ;
+;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[30].alu|mux_4x1:opMUX                      ; mux_4x1            ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[3].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[3].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[3].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[3].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[4].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[4].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[4].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[4].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[4].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[4].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[5].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[5].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[5].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[5].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[5].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[5].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[6].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[6].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[6].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[6].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[6].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[6].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[7].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[7].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[7].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[7].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[7].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[7].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[8].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[8].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[8].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[8].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[8].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[8].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:ALU_bits_1_to_30[9].alu|  ; 25 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[9].alu                                     ; ALU_1bit           ; work         ;
+;          |ALU_1bit:ALU_bits_1_to_30[9].alu|  ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[9].alu                                     ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[9].alu|adder_1bit:adder                    ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[9].alu|mux_4x1:opMUX                       ; mux_4x1            ; work         ;
-;          |ALU_1bit:alu0|                     ; 27 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0                                                        ; ALU_1bit           ; work         ;
+;          |ALU_1bit:alu0|                     ; 6 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0                                                        ; ALU_1bit           ; work         ;
 ;             |adder_1bit:adder|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0|adder_1bit:adder                                       ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0|mux_4x1:opMUX                                          ; mux_4x1            ; work         ;
-;          |ALU_1bit_MSB:alu31|                ; 26 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit_MSB:alu31                                                   ; ALU_1bit_MSB       ; work         ;
+;          |ALU_1bit_MSB:alu31|                ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit_MSB:alu31                                                   ; ALU_1bit_MSB       ; work         ;
+;             |adder_1bit:adder|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit_MSB:alu31|adder_1bit:adder                                  ; adder_1bit         ; work         ;
 ;             |mux_4x1:opMUX|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit_MSB:alu31|mux_4x1:opMUX                                     ; mux_4x1            ; work         ;
-;       |ALU_Control:ALU_CU|                   ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_Control:ALU_CU                                                                 ; ALU_Control        ; work         ;
-;       |Control_Unit:CU|                      ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|Control_Unit:CU                                                                    ; Control_Unit       ; work         ;
+;       |ALU_Control:ALU_CU|                   ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|ALU_Control:ALU_CU                                                                 ; ALU_Control        ; work         ;
+;       |Control_Unit:CU|                      ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|Control_Unit:CU                                                                    ; Control_Unit       ; work         ;
 ;       |Instruction_memory:IM|                ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|Instruction_memory:IM                                                              ; Instruction_memory ; work         ;
 ;          |altsyncram:instructions_rtl_0|     ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|Instruction_memory:IM|altsyncram:instructions_rtl_0                                ; altsyncram         ; work         ;
 ;             |altsyncram_le81:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|Instruction_memory:IM|altsyncram:instructions_rtl_0|altsyncram_le81:auto_generated ; altsyncram_le81    ; work         ;
-;       |register_file:RF|                     ; 683 (683)           ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|register_file:RF                                                                   ; register_file      ; work         ;
+;       |register_file:RF|                     ; 1328 (1328)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|MIPS_32bit:mips_core|register_file:RF                                                                   ; register_file      ; work         ;
 ;    |data_memory:DM|                          ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|data_memory:DM                                                                                          ; data_memory        ; work         ;
 ;       |altsyncram:memory_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|data_memory:DM|altsyncram:memory_rtl_0                                                                  ; altsyncram         ; work         ;
 ;          |altsyncram_qsd1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|data_memory:DM|altsyncram:memory_rtl_0|altsyncram_qsd1:auto_generated                                   ; altsyncram_qsd1    ; work         ;
@@ -445,7 +446,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 1024  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 26    ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 992   ;
@@ -463,16 +464,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------+---------------------------------------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
-; 3:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |top_level|MIPS_32bit:mips_core|PC[10]                                                           ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[7].alu|mux_4x1:opMUX|Out ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |top_level|MIPS_32bit:mips_core|register_file:RF|Mux63                                           ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 1312 LEs             ; 32 LEs                 ; No         ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[19].alu|A_in             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top_level|MIPS_32bit:mips_core|PC[26]                                                            ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |top_level|MIPS_32bit:mips_core|PC[4]                                                             ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:ALU_bits_1_to_30[21].alu|mux_4x1:opMUX|Out ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |top_level|MIPS_32bit:mips_core|register_file:RF|Mux63                                            ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |top_level|MIPS_32bit:mips_core|register_file:RF|Mux31                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -940,24 +942,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 140                         ;
+; boundary_port         ; 141                         ;
 ; cycloneiii_ff         ; 1024                        ;
-;     CLR               ; 6                           ;
-;     CLR SLD           ; 26                          ;
+;     CLR               ; 26                          ;
+;     CLR SLD           ; 6                           ;
 ;     ENA               ; 992                         ;
-; cycloneiii_lcell_comb ; 1694                        ;
+; cycloneiii_lcell_comb ; 1721                        ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 31                          ;
 ;         3 data inputs ; 31                          ;
-;     normal            ; 1632                        ;
+;     normal            ; 1659                        ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 127                         ;
-;         4 data inputs ; 1492                        ;
+;         2 data inputs ; 40                          ;
+;         3 data inputs ; 93                          ;
+;         4 data inputs ; 1524                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 42.00                       ;
-; Average LUT depth     ; 23.85                       ;
+; Max LUT depth         ; 44.00                       ;
+; Average LUT depth     ; 26.06                       ;
 +-----------------------+-----------------------------+
 
 
@@ -966,7 +968,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -976,7 +978,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 29 09:15:21 2020
+    Info: Processing started: Thu Oct 29 09:45:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_32bit -c MIPS_32bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -994,9 +996,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu_con
     Info (12023): Found entity 1: ALU_Control File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v Line: 17
 Info (12021): Found 4 design units, including 4 entities, in source file test.v
     Info (12023): Found entity 1: test File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 4
-    Info (12023): Found entity 2: test_reg_file File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 55
-    Info (12023): Found entity 3: test_inst_mem File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 126
-    Info (12023): Found entity 4: test_ALU File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 151
+    Info (12023): Found entity 2: test_reg_file File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 54
+    Info (12023): Found entity 3: test_inst_mem File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 125
+    Info (12023): Found entity 4: test_ALU File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/test.v Line: 150
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.v
     Info (12023): Found entity 1: Instruction_memory File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.v
@@ -1008,26 +1010,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.v
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.v
     Info (12023): Found entity 1: top_level File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v Line: 5
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "MIPS_32bit" for hierarchy "MIPS_32bit:mips_core" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v Line: 37
-Warning (10175): Verilog HDL warning at MIPS_32bit.v(81): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 81
-Info (12128): Elaborating entity "Instruction_memory" for hierarchy "MIPS_32bit:mips_core|Instruction_memory:IM" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 88
+Info (12128): Elaborating entity "MIPS_32bit" for hierarchy "MIPS_32bit:mips_core" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v Line: 38
+Warning (10175): Verilog HDL warning at MIPS_32bit.v(83): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 83
+Info (12128): Elaborating entity "Instruction_memory" for hierarchy "MIPS_32bit:mips_core|Instruction_memory:IM" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 90
 Warning (10850): Verilog HDL warning at Instruction_memory.v(23): number of words (18) in memory file does not match the number of elements in the address range [0:255] File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v Line: 23
 Warning (10030): Net "instructions.data_a" at Instruction_memory.v(19) has no driver or initial value, using a default initial value '0' File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v Line: 19
 Warning (10030): Net "instructions.waddr_a" at Instruction_memory.v(19) has no driver or initial value, using a default initial value '0' File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v Line: 19
 Warning (10030): Net "instructions.we_a" at Instruction_memory.v(19) has no driver or initial value, using a default initial value '0' File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/Instruction_memory.v Line: 19
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "MIPS_32bit:mips_core|Control_Unit:CU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 91
-Info (12128): Elaborating entity "register_file" for hierarchy "MIPS_32bit:mips_core|register_file:RF" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 97
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "MIPS_32bit:mips_core|Control_Unit:CU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 93
+Info (12128): Elaborating entity "register_file" for hierarchy "MIPS_32bit:mips_core|register_file:RF" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 99
 Warning (10175): Verilog HDL warning at register_file.v(32): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v Line: 32
 Warning (10175): Verilog HDL warning at register_file.v(42): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v Line: 42
 Warning (10175): Verilog HDL warning at register_file.v(48): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/register_file.v Line: 48
-Info (12128): Elaborating entity "ALU_Control" for hierarchy "MIPS_32bit:mips_core|ALU_Control:ALU_CU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 107
-Warning (10175): Verilog HDL warning at ALU_Control.v(62): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v Line: 62
-Info (12128): Elaborating entity "ALU_32bit" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 111
+Info (12128): Elaborating entity "ALU_Control" for hierarchy "MIPS_32bit:mips_core|ALU_Control:ALU_CU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 109
+Warning (10175): Verilog HDL warning at ALU_Control.v(85): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_Control.v Line: 85
+Info (12128): Elaborating entity "ALU_32bit" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/MIPS_32bit.v Line: 113
 Info (12128): Elaborating entity "ALU_1bit" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v Line: 29
 Info (12128): Elaborating entity "adder_1bit" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0|adder_1bit:adder" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v Line: 145
 Info (12128): Elaborating entity "mux_4x1" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit:alu0|mux_4x1:opMUX" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v Line: 154
 Info (12128): Elaborating entity "ALU_1bit_MSB" for hierarchy "MIPS_32bit:mips_core|ALU_32bit:ALU|ALU_1bit_MSB:alu31" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/ALU_32bit.v Line: 42
-Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:DM" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v Line: 40
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:DM" File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/top_level.v Line: 41
 Warning (10175): Verilog HDL warning at data_memory.v(35): ignoring unsupported system task File: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/data_memory.v Line: 35
 Warning (276027): Inferred dual-clock RAM node "data_memory:DM|memory_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 2 megafunctions from design logic
@@ -1092,15 +1094,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2889 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2917 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 138 output pins
-    Info (21061): Implemented 2685 logic cells
+    Info (21059): Implemented 139 output pins
+    Info (21061): Implemented 2712 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Thu Oct 29 09:15:40 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Thu Oct 29 09:45:37 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:33
 
 

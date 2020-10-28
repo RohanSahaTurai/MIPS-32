@@ -20,6 +20,7 @@
 			    MemToReg,
 			    ALUSrc,
 			    RegWrite,
+				 JR,
 		output [1:0] ALUOp,
 		
 		output reg [31:0] PC
@@ -68,6 +69,7 @@
 		
 		wire [31:0] PC_add_1;  // Current PC + 1
 		wire [31:0] PC_BEQ;	  // PC for BEQ instruction
+		wire [31:0] PC_J;	  	  // PC for J instruction
 		wire [31:0] PC_next;	  // Next PC value
 		
 		always @(posedge clk or posedge Reset) begin
@@ -104,7 +106,7 @@
 		assign ALU_in2 = ALUSrc ? sign_extended : ReadData2;
 		
 		// ALU Control Unit
-		ALU_Control ALU_CU (ALUCtl, ALUOp, instruction[5:0]);
+		ALU_Control ALU_CU (ALUCtl, JR, ALUOp, instruction[5:0]);
 		
 		// ALU
 		ALU_32bit ALU (ALUResult, CarryOut, Overflow, Zero, 
@@ -120,7 +122,10 @@
 		// Jump instruction control. 
 		// Lower 26 bits come from the instruction. 
 		// Rest of the bits are concatenated from the PC
-		assign PC_next = Jump ? ({PC_add_1[31:26],instruction[25:0]}) : PC_BEQ;
+		assign PC_J = Jump ? ({PC_add_1[31:26],instruction[25:0]}) : PC_BEQ;
+		
+		// JR instruction control MUX
+		assign PC_next = JR ? ReadData1 : PC_J;
 		
 		// Wires out to the Data Memory
 		assign Address_DataMem 	 = ALUResult;

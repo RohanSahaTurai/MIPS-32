@@ -19,11 +19,12 @@ module test;
 		  Branch,
 		  MemToReg,
 		  ALUSrc,
-		  RegWrite;
+		  RegWrite,
+		  JR;
 	wire [1:0] ALUOp;
 	
 	top_level i1 (Clk, reset, ReadData_DataMem, Address_DataMem, WriteData_DataMem, MemWrite, MemRead,
-					  RegDst, Jump, Branch, MemToReg, ALUSrc, RegWrite, ALUOp, PC);
+					  RegDst, Jump, Branch, MemToReg, ALUSrc, RegWrite, JR, ALUOp, PC);
 	
 	initial begin
 		

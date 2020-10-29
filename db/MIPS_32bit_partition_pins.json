@@ -404,6 +404,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "JAL",
+					"strict" : false
+				},
+				{
 					"name" : "Branch",
 					"strict" : false
 				},

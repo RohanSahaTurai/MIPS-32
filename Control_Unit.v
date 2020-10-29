@@ -1,4 +1,4 @@
-/*_____________________________________
+/*_________________________________
          The Control Unit
   _____________________________________*/
   
@@ -10,6 +10,7 @@
 		input					Reset,
 		output reg			RegDst,
 		output reg			Jump,
+		output reg			JAL,
 		output reg			Branch,
 		output reg			MemRead,
 		output reg			MemToReg,
@@ -32,6 +33,7 @@
 				MemWrite <= 0;
 				Branch   <= 0;
 				Jump		<= 0;
+				JAL		<= 0;
 				ALUOp    <= 0;
 			
 		end
@@ -49,6 +51,7 @@
 						MemWrite <= 0;
 						Branch   <= 0;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 2'b10;
 				end
 				
@@ -62,6 +65,7 @@
 						MemWrite <= 0;
 						Branch   <= 0;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 0;
 				end
 				
@@ -75,6 +79,7 @@
 						MemWrite <= 0;
 						Branch   <= 0;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 0;
 				end
 				
@@ -88,6 +93,7 @@
 						MemWrite <= 1;
 						Branch   <= 0;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 0;
 				end
 				
@@ -101,6 +107,7 @@
 						MemWrite <= 0;
 						Branch   <= 1;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 2'b01;
 				end
 				
@@ -114,6 +121,21 @@
 						MemWrite <= 0;
 						Branch   <= 0;
 						Jump		<= 1;
+						JAL		<= 0;
+						ALUOp    <= 0;
+				end
+				
+				6'b000011: begin		//JAL
+				
+						RegDst   <= 0;
+						ALUSrc   <= 0;
+						MemToReg <= 0;
+						RegWrite <= 1;
+						MemRead	<= 0;
+						MemWrite <= 0;
+						Branch   <= 0;
+						Jump		<= 1;
+						JAL		<= 1;
 						ALUOp    <= 0;
 				end
 				
@@ -127,6 +149,7 @@
 						MemWrite <= 0;
 						Branch   <= 0;
 						Jump		<= 0;
+						JAL		<= 0;
 						ALUOp    <= 0;
 				end
 				
@@ -136,4 +159,3 @@
 	end
 	
 	endmodule
-		

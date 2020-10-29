@@ -14,6 +14,7 @@
 		
 		output RegDst,
 			    Jump,
+				 JAL,
 			    Branch,
 			    MemToReg,
 			    ALUSrc,
@@ -35,7 +36,7 @@
 		
 		//processor core
 		MIPS_32bit mips_core (Clk, Reset, ReadData_DataMem, Address_DataMem, WriteData_DataMem, MemWrite, MemRead,
-									 RegDst, Jump, Branch, MemToReg, ALUSrc, RegWrite, JR, ALUOp, PC);
+									 RegDst, Jump, JAL, Branch, MemToReg, ALUSrc, RegWrite, JR, ALUOp, PC);
 	
 		// data-memory
 		data_memory DM (ReadData_DataMem, Address_DataMem, WriteData_DataMem, MemWrite, MemRead, Clk);

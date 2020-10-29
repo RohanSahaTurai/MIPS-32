@@ -16,6 +16,7 @@
 		
 		output RegDst,
 			    Jump,
+				 JAL,
 			    Branch,
 			    MemToReg,
 			    ALUSrc,
@@ -90,10 +91,13 @@
 		Instruction_memory IM(instruction, PC, clk);
 		
 		// Control Unit
-		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
+		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, JAL, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
 		
 		// 2x1 MUX to select if data[rs2] is to be stored
-		assign WriteRegister_in = RegDst ? (instruction[15:11]) : (instruction[20:16]) ;
+		assign RegDst_WriteRegister_in = RegDst ? (instruction[15:11]) : (instruction[20:16]) ;
+		
+		// 2x1 MUX to select if PC_Add_1 is to be stored in GPR31
+		assign WriteRegister_in = JAL ? 5'd31 : RegDst_WriteRegister_in;
 		
 		// Register File instantiation
 		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, clk);
@@ -114,7 +118,10 @@
 
 		
 		// 2x1 MUX to select if the ALU result or the load word is to be stored in GPR
-		assign WriteData_in = MemToReg ? ReadData_DataMem : ALUResult;
+		assign MemToReg_WriteData_in = MemToReg ? ReadData_DataMem : ALUResult;
+		
+		// 2x1 MUX to select if PC_add_1 is to be stored in GPR31
+		assign WriteData_in = JAL ? PC_add_1 : MemToReg_WriteData_in;
 		
 		// BEQ control -> if the BRANCH control wire and Zero signal are high, execute BEQ
 		assign PC_BEQ = (Branch & Zero) ? (PC_add_1 + sign_extended) : PC_add_1;

@@ -43,7 +43,7 @@ module test;
 		#150;
 		reset = 0;
 		
-		#6050;
+		#600000;
 		$display($time, " <<Simulation Complete>>");
 		$stop;
 	end

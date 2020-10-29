@@ -1,12 +1,12 @@
 // memory data file (do not edit the following line - required for mem load use)
 // instance=/test/i1/DM/memory
 // format=bin addressradix=h dataradix=b version=1.0 wordsperline=1 noaddress
-00000000000000000000000000000010
-00000000000000000000000000000010
-00000000000000000000000000001101
-00000000000000000000000000000011
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+00000000000000000001001110111010
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

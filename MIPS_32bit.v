@@ -16,10 +16,12 @@
 		
 		output RegDst,
 			    Jump,
+				 JAL,
 			    Branch,
 			    MemToReg,
 			    ALUSrc,
 			    RegWrite,
+				 JR,
 		output [1:0] ALUOp,
 		
 		output reg [31:0] PC
@@ -68,6 +70,7 @@
 		
 		wire [31:0] PC_add_1;  // Current PC + 1
 		wire [31:0] PC_BEQ;	  // PC for BEQ instruction
+		wire [31:0] PC_J;	  	  // PC for J instruction
 		wire [31:0] PC_next;	  // Next PC value
 		
 		always @(posedge clk or posedge Reset) begin
@@ -88,10 +91,13 @@
 		Instruction_memory IM(instruction, PC, clk);
 		
 		// Control Unit
-		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
+		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, JAL, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
 		
 		// 2x1 MUX to select if data[rs2] is to be stored
-		assign WriteRegister_in = RegDst ? (instruction[15:11]) : (instruction[20:16]) ;
+		assign RegDst_WriteRegister_in = RegDst ? (instruction[15:11]) : (instruction[20:16]) ;
+		
+		// 2x1 MUX to select if PC_Add_1 is to be stored in GPR31
+		assign WriteRegister_in = JAL ? 5'd31 : RegDst_WriteRegister_in;
 		
 		// Register File instantiation
 		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, clk);
@@ -104,7 +110,7 @@
 		assign ALU_in2 = ALUSrc ? sign_extended : ReadData2;
 		
 		// ALU Control Unit
-		ALU_Control ALU_CU (ALUCtl, ALUOp, instruction[5:0]);
+		ALU_Control ALU_CU (ALUCtl, JR, ALUOp, instruction[5:0]);
 		
 		// ALU
 		ALU_32bit ALU (ALUResult, CarryOut, Overflow, Zero, 
@@ -112,7 +118,10 @@
 
 		
 		// 2x1 MUX to select if the ALU result or the load word is to be stored in GPR
-		assign WriteData_in = MemToReg ? ReadData_DataMem : ALUResult;
+		assign MemToReg_WriteData_in = MemToReg ? ReadData_DataMem : ALUResult;
+		
+		// 2x1 MUX to select if PC_add_1 is to be stored in GPR31
+		assign WriteData_in = JAL ? PC_add_1 : MemToReg_WriteData_in;
 		
 		// BEQ control -> if the BRANCH control wire and Zero signal are high, execute BEQ
 		assign PC_BEQ = (Branch & Zero) ? (PC_add_1 + sign_extended) : PC_add_1;
@@ -120,7 +129,10 @@
 		// Jump instruction control. 
 		// Lower 26 bits come from the instruction. 
 		// Rest of the bits are concatenated from the PC
-		assign PC_next = Jump ? ({PC_add_1[31:26],instruction[25:0]}) : PC_BEQ;
+		assign PC_J = Jump ? ({PC_add_1[31:26],instruction[25:0]}) : PC_BEQ;
+		
+		// JR instruction control MUX
+		assign PC_next = JR ? ReadData1 : PC_J;
 		
 		// Wires out to the Data Memory
 		assign Address_DataMem 	 = ALUResult;

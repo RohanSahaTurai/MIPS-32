@@ -404,6 +404,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "JAL",
+					"strict" : false
+				},
+				{
 					"name" : "Branch",
 					"strict" : false
 				},
@@ -417,6 +421,10 @@
 				},
 				{
 					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "JR",
 					"strict" : false
 				},
 				{

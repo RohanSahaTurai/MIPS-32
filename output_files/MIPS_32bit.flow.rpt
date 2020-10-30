@@ -1,5 +1,5 @@
 Flow report for MIPS_32bit
-Thu Oct 29 10:39:28 2020
+Thu Oct 29 18:18:17 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 29 10:39:28 2020       ;
+; Flow Status                        ; Successful - Thu Oct 29 18:18:17 2020       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; MIPS_32bit                                  ;
-; Top-level Entity Name              ; top_level                                   ;
+; Top-level Entity Name              ; Top_Level_Block                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,982 / 6,272 ( 32 % )                      ;
-;     Total combinational functions  ; 1,755 / 6,272 ( 28 % )                      ;
-;     Dedicated logic registers      ; 1,024 / 6,272 ( 16 % )                      ;
-; Total registers                    ; 1024                                        ;
-; Total pins                         ; 142 / 180 ( 79 % )                          ;
+; Device                             ; EP4CE6E22C8                                 ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 3,285 / 6,272 ( 52 % )                      ;
+;     Total combinational functions  ; 2,528 / 6,272 ( 40 % )                      ;
+;     Dedicated logic registers      ; 2,108 / 6,272 ( 34 % )                      ;
+; Total registers                    ; 2108                                        ;
+; Total pins                         ; 13 / 92 ( 14 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 16,384 / 276,480 ( 6 % )                    ;
+; Total memory bits                  ; 8,192 / 276,480 ( 3 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6F17C8                                 ;
-; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,39 +64,49 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/29/2020 10:38:12 ;
+; Start date & time ; 10/29/2020 18:16:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_32bit          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                   ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id           ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID                ; 968726668001.160392829206468           ; --            ; --          ; --                   ;
-; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Synplify                               ; <None>        ; --          ; --                   ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench_1          ;
-; EDA_INPUT_DATA_FORMAT                ; Vqm                                    ; --            ; --          ; eda_design_synthesis ;
-; EDA_LMF_FILE                         ; synplcty.lmf                           ; --            ; --          ; eda_design_synthesis ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench_1                            ; --            ; --          ; eda_simulation       ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation       ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                   ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation       ;
-; EDA_TEST_BENCH_FILE                  ; test.v                                 ; --            ; --          ; testbench_1          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; test                                   ; --            ; --          ; testbench_1          ;
-; EDA_TEST_BENCH_NAME                  ; testbench_1                            ; --            ; --          ; eda_simulation       ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation       ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; top_level   ; Top                  ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; top_level   ; Top                  ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; top_level   ; Top                  ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                   ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                   ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                   ;
-; SMART_RECOMPILE                      ; On                                     ; Off           ; --          ; --                   ;
-; TOP_LEVEL_ENTITY                     ; top_level                              ; MIPS_32bit    ; --          ; --                   ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                       ;
++--------------------------------------+----------------------------------------+---------------+-----------------+----------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name     ; Section Id           ;
++--------------------------------------+----------------------------------------+---------------+-----------------+----------------------+
+; COMPILER_SIGNATURE_ID                ; 968726668001.160395580420116           ; --            ; --              ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL      ; Synplify                               ; <None>        ; --              ; --                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --              ; testbench_1          ;
+; EDA_INPUT_DATA_FORMAT                ; Vqm                                    ; --            ; --              ; eda_design_synthesis ;
+; EDA_LMF_FILE                         ; synplcty.lmf                           ; --            ; --              ; eda_design_synthesis ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench_1                            ; --            ; --              ; eda_simulation       ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --              ; eda_simulation       ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --              ; --                   ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --              ; eda_simulation       ;
+; EDA_TEST_BENCH_FILE                  ; test.v                                 ; --            ; --              ; testbench_1          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; test                                   ; --            ; --              ; testbench_1          ;
+; EDA_TEST_BENCH_NAME                  ; testbench_1                            ; --            ; --              ; eda_simulation       ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --              ; eda_simulation       ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --              ; --                   ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --              ; --                   ;
+; MISC_FILE                            ; HexToSSD/MasterClk.bsf                 ; --            ; --              ; --                   ;
+; MISC_FILE                            ; HexToSSD/MasterClk_bb.v                ; --            ; --              ; --                   ;
+; MISC_FILE                            ; HexToSSD/SecondaryClk.bsf              ; --            ; --              ; --                   ;
+; MISC_FILE                            ; HexToSSD/SecondaryClk_bb.v             ; --            ; --              ; --                   ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --              ; --                   ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --              ; --                   ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --            ; --              ; --                   ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --            ; --              ; --                   ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Top_Level_Block ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Top_Level_Block ; Top                  ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Top_Level_Block ; Top                  ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --              ; --                   ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --              ; --                   ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --              ; --                   ;
+; SMART_RECOMPILE                      ; On                                     ; Off           ; --              ; --                   ;
+; TOP_LEVEL_ENTITY                     ; Top_Level_Block                        ; MIPS_32bit    ; --              ; --                   ;
++--------------------------------------+----------------------------------------+---------------+-----------------+----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -104,12 +114,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4785 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:47     ; 1.1                     ; 5576 MB             ; 00:00:59                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.3                     ; 4776 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4661 MB             ; 00:00:03                           ;
-; Total                ; 00:01:12     ; --                      ; --                  ; 00:01:39                           ;
+; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4812 MB             ; 00:00:45                           ;
+; Fitter               ; 00:00:43     ; 1.1                     ; 5593 MB             ; 00:01:05                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4676 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.5                     ; 4801 MB             ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4665 MB             ; 00:00:07                           ;
+; Total                ; 00:01:26     ; --                      ; --                  ; 00:02:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

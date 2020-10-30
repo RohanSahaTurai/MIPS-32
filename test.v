@@ -8,24 +8,10 @@ module test;
 	reg Clk, reset;
 
 	// Data Memory Wires
-	wire [31:0]  ReadData_DataMem;
-	wire [31:0]  Address_DataMem;
-	wire [31:0]  WriteData_DataMem;
-	wire 			 MemWrite, MemRead;
-	wire [31:0]  PC;
-
-	wire RegDst,
-		  Jump,
-		  JAL,
-		  Branch,
-		  MemToReg,
-		  ALUSrc,
-		  RegWrite,
-		  JR;
-	wire [1:0] ALUOp;
+	wire [31:0] memory_5;
+	wire [31:0] PC;
 	
-	top_level i1 (Clk, reset, ReadData_DataMem, Address_DataMem, WriteData_DataMem, MemWrite, MemRead,
-					  RegDst, Jump, JAL, Branch, MemToReg, ALUSrc, RegWrite, JR, ALUOp, PC);
+	top_level i1 (Clk, reset, memory_5, PC);
 	
 	initial begin
 		

@@ -6,26 +6,14 @@
   
   module MIPS_32bit (
 		
-		input 		   clk, 
+		input 		   Clock, 
 		input 		   Reset,
 		input  [31:0]  ReadData_DataMem,
 		output [31:0]  Address_DataMem,
 		output [31:0]  WriteData_DataMem,
 		output			MemWrite,
 		output			MemRead,
-		
-		output RegDst,
-			    Jump,
-				 JAL,
-			    Branch,
-			    MemToReg,
-			    ALUSrc,
-			    RegWrite,
-				 JR,
-		output [1:0] ALUOp,
-		
 		output reg [31:0] PC
-		
 		);
   
 		// data bus carrying the current instruction
@@ -39,7 +27,6 @@
 		
 		// Control Wires
 		// MemRead and MemWrite is output to the Data Memory
-		/*
 		wire RegDst,
 			  Jump,
 			  JAL,
@@ -49,7 +36,7 @@
 			  RegWrite,
 			  JR;
 		wire [1:0] ALUOp;
-		*/
+
 		// ALU Control Wires
 		wire [3:0] ALUCtl;
 		
@@ -73,7 +60,7 @@
 		wire [31:0] PC_J;	  	  // PC for J instruction
 		wire [31:0] PC_next;	  // Next PC value
 		
-		always @(posedge clk or posedge Reset) begin
+		always @(posedge Clock or posedge Reset) begin
 					
 			if (Reset)
 				PC <= 32'b0;
@@ -88,7 +75,7 @@
 		assign PC_add_1 = PC + 1;
 		
 		// Instruction memory instantiation
-		Instruction_memory IM(instruction, PC, clk);
+		Instruction_memory IM(instruction, PC, Clock);
 		
 		// Control Unit
 		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, JAL, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
@@ -100,7 +87,7 @@
 		assign WriteRegister_in = JAL ? 5'd31 : RegDst_WriteRegister_in;
 		
 		// Register File instantiation
-		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, clk);
+		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, Clock);
 		
 		// Sign extension module for I-type instructions
 		assign sign_extended = {{16{instruction[15]}},instruction[15:0]};

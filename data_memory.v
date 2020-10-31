@@ -11,14 +11,21 @@
 		input      [31:0] write_data,		// data to be writtend
 		input             MemWrite,		// write signal
 		input             MemRead,			// read signal
-		input	            Clk 				// Clock signal for sync RAM
+		input	            Clock, 			// Clock signal for sync RAM
+		
+		// Value stored in memory[5] -> for displaying in the ssd	
+		output reg [31:0] mem_5			
 		
 		);
 		
 		// the memory is restricted to 256 x 32 bits for simplicity
-		reg [31:0] memory [255:0];
-		
-		always @(posedge Clk) begin 
+		reg [31:0] memory [31:0];
+/*		
+		initial begin 
+			$readmemb ("data_mem_init.mem", memory);
+		end
+*/		
+		always @(posedge Clock) begin 
 			
 			#1;
 			if (MemWrite == 1) begin
@@ -33,8 +40,9 @@
 			end
 			
 			$writememb ("data_mem_out.mem", memory);
-		end
-		
 			
-endmodule
+			mem_5 <= memory[5];
+		end
+			
+ endmodule
 		

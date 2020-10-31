@@ -2,40 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'Clk'
-Slack : -30.081
-TNS   : -23689.301
+Type  : Slow 1200mV 85C Model Setup 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : -34.509
+TNS   : -59148.123
 
-Type  : Slow 1200mV 85C Model Hold 'Clk'
-Slack : 1.550
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -3.604
+TNS   : -66.620
+
+Type  : Slow 1200mV 85C Model Setup 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Slow 1200mV 85C Model Hold 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk'
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : 1.262
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[20]'
 Slack : -3.201
-TNS   : -1541.693
+TNS   : -3096.161
 
-Type  : Slow 1200mV 0C Model Setup 'Clk'
-Slack : -28.236
-TNS   : -22301.918
-
-Type  : Slow 1200mV 0C Model Hold 'Clk'
-Slack : 1.428
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk'
-Slack : -3.201
-TNS   : -1541.693
-
-Type  : Fast 1200mV 0C Model Setup 'Clk'
-Slack : -12.445
-TNS   : -9746.284
-
-Type  : Fast 1200mV 0C Model Hold 'Clk'
-Slack : 0.619
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -1120.450
+TNS   : -41.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Setup 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : -32.463
+TNS   : -55603.382
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -3.437
+TNS   : -60.454
+
+Type  : Slow 1200mV 0C Model Setup 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.692
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : 1.157
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : -3.201
+TNS   : -3096.161
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Fast 1200mV 0C Model Setup 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : -14.357
+TNS   : -24278.517
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.099
+TNS   : -15.547
+
+Type  : Fast 1200mV 0C Model Setup 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -30.698
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[20]'
+Slack : -1.000
+TNS   : -2081.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CounterUp_modulo_50M:inst7|cnt[12]'
+Slack : -1.000
+TNS   : -2.000
 
 ------------------------------------------------------------

@@ -6,26 +6,14 @@
   
   module MIPS_32bit (
 		
-		input 		   clk, 
+		input 		   Clock, 
 		input 		   Reset,
 		input  [31:0]  ReadData_DataMem,
 		output [31:0]  Address_DataMem,
 		output [31:0]  WriteData_DataMem,
 		output			MemWrite,
 		output			MemRead,
-		
-		output RegDst,
-			    Jump,
-				 JAL,
-			    Branch,
-			    MemToReg,
-			    ALUSrc,
-			    RegWrite,
-				 JR,
-		output [1:0] ALUOp,
-		
-		output reg [31:0] PC
-		
+		output [31:0] PC_out
 		);
   
 		// data bus carrying the current instruction
@@ -39,7 +27,6 @@
 		
 		// Control Wires
 		// MemRead and MemWrite is output to the Data Memory
-		/*
 		wire RegDst,
 			  Jump,
 			  JAL,
@@ -49,7 +36,7 @@
 			  RegWrite,
 			  JR;
 		wire [1:0] ALUOp;
-		*/
+
 		// ALU Control Wires
 		wire [3:0] ALUCtl;
 		
@@ -66,14 +53,28 @@
 		wire [31:0] ALU_in2;
 		
 		//Program Counter
-		//reg [31:0] PC; 		// Program counter
+		reg [31:0] PC; 		// Program counter
 		
 		wire [31:0] PC_add_1;  // Current PC + 1
 		wire [31:0] PC_BEQ;	  // PC for BEQ instruction
 		wire [31:0] PC_J;	  	  // PC for J instruction
 		wire [31:0] PC_next;	  // Next PC value
 		
-		always @(posedge clk or posedge Reset) begin
+		initial begin
+			PC <= 0;
+		end
+		
+		/* Update the program counter on the negative edge of the clock.
+			The instruction and control signals propagate through all the 
+			modules and there is a delay before the signals are processed 
+			and the instruction execution is completed in that cycle. To 
+			allow for that delay, update the PC at the end of that clock 
+			cycle to make sure the instruction has completed execution and 
+			the next PC value can be updated. 
+			
+			P.S.: Take note of this during the simulation. Tested and verified on FPGA.
+		*/
+		always @(negedge Clock or posedge Reset) begin
 					
 			if (Reset)
 				PC <= 32'b0;
@@ -88,7 +89,7 @@
 		assign PC_add_1 = PC + 1;
 		
 		// Instruction memory instantiation
-		Instruction_memory IM(instruction, PC, clk);
+		Instruction_memory IM(instruction, PC, Clock);
 		
 		// Control Unit
 		Control_Unit CU(instruction[31:26], Reset, RegDst, Jump, JAL, Branch, MemRead, MemToReg, ALUOp, MemWrite, ALUSrc, RegWrite);
@@ -100,7 +101,7 @@
 		assign WriteRegister_in = JAL ? 5'd31 : RegDst_WriteRegister_in;
 		
 		// Register File instantiation
-		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, clk);
+		register_file RF (ReadData1, ReadData2, instruction[25:21], instruction[20:16], WriteRegister_in, WriteData_in, RegWrite, Clock);
 		
 		// Sign extension module for I-type instructions
 		assign sign_extended = {{16{instruction[15]}},instruction[15:0]};
@@ -137,7 +138,9 @@
 		// Wires out to the Data Memory
 		assign Address_DataMem 	 = ALUResult;
 		assign WriteData_DataMem = ReadData2;
-			
+		
+		// PC Out for simulation purpose
+		assign PC_out = PC;
 		
 		
   endmodule

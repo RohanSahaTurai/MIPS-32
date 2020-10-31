@@ -37,8 +37,8 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY top_level
+set_global_assignment -name DEVICE EP4CE6E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top_Level_Block
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:30:13  SEPTEMBER 03, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -61,18 +61,49 @@ set_global_assignment -name EDA_TEST_BENCH_NAME testbench_1 -section_id eda_simu
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench_1
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test -section_id testbench_1
 set_global_assignment -name EDA_TEST_BENCH_FILE test.v -section_id testbench_1
+set_global_assignment -name AUTO_RAM_RECOGNITION ON
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
 set_global_assignment -name VERILOG_FILE data_memory.v
 set_global_assignment -name VERILOG_FILE MIPS_32bit.v
 set_global_assignment -name VERILOG_FILE ALU_32bit.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE ALU_Control.v
 set_global_assignment -name VERILOG_FILE test.v
 set_global_assignment -name VERILOG_FILE Instruction_memory.v
 set_global_assignment -name VERILOG_FILE register_file.v
 set_global_assignment -name VERILOG_FILE Control_Unit.v
 set_global_assignment -name VERILOG_FILE ALU.v
-set_global_assignment -name AUTO_RAM_RECOGNITION ON
 set_global_assignment -name VERILOG_FILE top_level.v
+set_global_assignment -name BDF_FILE Top_Level_Block.bdf
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS16
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_128 -to A
+set_location_assignment PIN_121 -to B
+set_location_assignment PIN_125 -to C
+set_location_assignment PIN_23 -to Clock
+set_location_assignment PIN_129 -to D
+set_location_assignment PIN_132 -to E
+set_location_assignment PIN_126 -to F
+set_location_assignment PIN_124 -to G
+set_location_assignment PIN_88 -to Reset
+set_global_assignment -name VERILOG_FILE HexToSSD/SSD.v
+set_global_assignment -name VERILOG_FILE HexToSSD/SSD_MUX.v
+set_global_assignment -name VERILOG_FILE HexToSSD/Decoder_2_to_4.v
+set_location_assignment PIN_133 -to D1
+set_location_assignment PIN_135 -to D2
+set_location_assignment PIN_136 -to D3
+set_location_assignment PIN_137 -to D4
+set_global_assignment -name VERILOG_FILE HexToSSD/CounterUp_modulo_50M.v
+set_global_assignment -name VERILOG_FILE HexToSSD/CounterUp_2bit.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

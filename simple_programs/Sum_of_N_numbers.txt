@@ -1,0 +1,26 @@
+int i = 0;
+int sum = 0;
+int N = 100;
+
+while (i <= 100)
+{
+	sum = sum + i;
+	i = i + 1;
+}
+
+//////////////////////////////////
+i - > R1
+sum -> R2
+N -> R3
+
+addi R1 = R0 + 0
+addi R2 = R0 + 0
+addi R3 = R0 + 100
+
+loop:
+addi R1 = R1 + 1
+add  R2 = R2 + R1
+sw	 R2 in memory[5]
+beq	 R1 == R3, PC[next]+1
+j	 loop
+exit: j exit

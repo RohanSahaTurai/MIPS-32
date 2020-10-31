@@ -12,7 +12,7 @@
 		input  [ 4:0] Read_Reg2,		// Address Rs2
 		input  [ 4:0] Write_Reg,		// Address Rd
 		input  [31:0] Write_Data,		// Data to be written at Rd
-		input	 RegWrite,		 		// Register Write Signal,
+		input	 RegWrite,		 			// Register Write Signal,
 		input	 Clk							// Clock signal for sync RAM
 		
 		);
@@ -32,7 +32,7 @@
 			$strobe ($time, ", Read_Reg2 = %0d, Read_Data2 = %0d, registers[Read_Reg2] = %0d", Read_Reg2, Read_Data2, registers[Read_Reg2]);
 		end
 		
-		always @(posedge Clk) begin	
+		always @(posedge Clk) begin
 			
 			// If the write signal is enabled, update the write register
 			#1; if (RegWrite && Write_Reg != 0) begin				
@@ -42,6 +42,7 @@
 					$strobe ($time, ", Write: register[%0d] = %0d", Write_Reg, Write_Data);
 			end
 			
+			// register 0 is hardwired to 0  
 			registers [0] <= 0;
 						
 			// Write the memory to a file to track

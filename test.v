@@ -8,24 +8,16 @@ module test;
 	reg Clk, reset;
 
 	// Data Memory Wires
-	wire [31:0]  ReadData_DataMem;
-	wire [31:0]  Address_DataMem;
-	wire [31:0]  WriteData_DataMem;
-	wire 			 MemWrite, MemRead;
-	wire [31:0]  PC;
-
-	wire RegDst,
-		  Jump,
-		  JAL,
-		  Branch,
-		  MemToReg,
-		  ALUSrc,
-		  RegWrite,
-		  JR;
-	wire [1:0] ALUOp;
+	wire [31:0] memory_5;
+	wire [31:0] PC;
+	wire [3:0] mem5_4bit[3:0];
 	
-	top_level i1 (Clk, reset, ReadData_DataMem, Address_DataMem, WriteData_DataMem, MemWrite, MemRead,
-					  RegDst, Jump, JAL, Branch, MemToReg, ALUSrc, RegWrite, JR, ALUOp, PC);
+	top_level i1 (Clk, reset, memory_5, PC);
+	
+	assign mem5_4bit[0] = memory_5[3:0];
+	assign mem5_4bit[1] = memory_5[7:4];
+	assign mem5_4bit[2] = memory_5[11:8];
+	assign mem5_4bit[3] = memory_5[15:12];
 	
 	initial begin
 		
@@ -43,7 +35,7 @@ module test;
 		#150;
 		reset = 0;
 		
-		#6050;
+		#600000;
 		$display($time, " <<Simulation Complete>>");
 		$stop;
 	end

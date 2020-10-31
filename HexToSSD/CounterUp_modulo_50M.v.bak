@@ -1,0 +1,16 @@
+module CounterUp_modulo_50M (input clk, output [26:0] out);
+
+
+	reg [26:0] cnt;
+	
+	initial begin
+		cnt <= 0;
+	end
+	
+	always @(posedge clk) begin
+	
+		cnt <= cnt + 1;
+	
+	end
+
+endmodule 

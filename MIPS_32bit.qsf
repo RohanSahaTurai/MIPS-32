@@ -76,8 +76,6 @@ set_global_assignment -name VERILOG_FILE Control_Unit.v
 set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VERILOG_FILE top_level.v
 set_global_assignment -name BDF_FILE Top_Level_Block.bdf
-set_global_assignment -name QIP_FILE HexToSSD/MasterClk.qip
-set_global_assignment -name QIP_FILE HexToSSD/SecondaryClk.qip
 set_global_assignment -name ENABLE_OCT_DONE OFF
 set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
 set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
@@ -100,10 +98,12 @@ set_location_assignment PIN_88 -to Reset
 set_global_assignment -name VERILOG_FILE HexToSSD/SSD.v
 set_global_assignment -name VERILOG_FILE HexToSSD/SSD_MUX.v
 set_global_assignment -name VERILOG_FILE HexToSSD/Decoder_2_to_4.v
-set_location_assignment PIN_137 -to D1
-set_location_assignment PIN_136 -to D2
-set_location_assignment PIN_135 -to D3
-set_location_assignment PIN_133 -to D4
+set_location_assignment PIN_133 -to D1
+set_location_assignment PIN_135 -to D2
+set_location_assignment PIN_136 -to D3
+set_location_assignment PIN_137 -to D4
+set_global_assignment -name VERILOG_FILE HexToSSD/CounterUp_modulo_50M.v
+set_global_assignment -name VERILOG_FILE HexToSSD/CounterUp_2bit.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

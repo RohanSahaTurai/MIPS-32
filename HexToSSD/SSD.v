@@ -7,20 +7,13 @@ module SSD (
 	output reg E,
 	output reg F,
 	output reg G,
-	input	     W,
-	input      X,
-	input      Y,
-	input		  Z
+	input [3:0] HexNum
 	
-	);
-	
-	reg [3:0] number; 	
+	); 	
 	
 	always @(*) begin
 	
-		number = {W,{X,{Y,Z}}};
-	
-		case (number)
+		case (HexNum)
 			
 			4'd0:	begin
 				

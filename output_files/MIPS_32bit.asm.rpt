@@ -1,5 +1,5 @@
 Assembler report for MIPS_32bit
-Thu Oct 29 18:18:01 2020
+Sun Nov 01 04:02:48 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.sof
-  6. Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.pof
+  5. Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.sof
+  6. Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 29 18:18:01 2020 ;
+; Assembler Status      ; Successful - Sun Nov 01 04:02:48 2020 ;
 ; Revision Name         ; MIPS_32bit                            ;
 ; Top-level Entity Name ; Top_Level_Block                       ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,35 +53,35 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                   ;
-+-------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                   ;
-+-------------------------------------------------------------------------------------------------------------+
-; E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.sof ;
-; E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.pof ;
-+-------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                ;
++----------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                ;
++----------------------------------------------------------------------------------------------------------+
+; E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.sof ;
+; E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.pof ;
++----------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                              ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00305CA4                                                                                                           ;
-; Checksum       ; 0x00305CA4                                                                                                           ;
-+----------------+----------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.sof ;
++----------------+-------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                           ;
++----------------+-------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x002E2B48                                                                                                        ;
+; Checksum       ; 0x002E2B48                                                                                                        ;
++----------------+-------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS_32bit/output_files/MIPS_32bit.pof ;
-+--------------------+------------------------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                                          ;
-+--------------------+------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode      ; 0x00000000                                                                                                       ;
-; Checksum           ; 0x1E1DD54E                                                                                                       ;
-; Compression Ratio  ; 2                                                                                                                ;
-+--------------------+------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/UTS_Current/Academics/2020 Spring/48451 Embedded Systems Studio A/MIPS-32/output_files/MIPS_32bit.pof ;
++--------------------+---------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                       ;
++--------------------+---------------------------------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                                                    ;
+; Checksum           ; 0x1E248450                                                                                                    ;
+; Compression Ratio  ; 2                                                                                                             ;
++--------------------+---------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -90,15 +90,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 29 18:17:59 2020
+    Info: Processing started: Sun Nov 01 04:02:46 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MIPS_32bit -c MIPS_32bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4676 megabytes
-    Info: Processing ended: Thu Oct 29 18:18:01 2020
+    Info: Peak virtual memory: 4677 megabytes
+    Info: Processing ended: Sun Nov 01 04:02:48 2020
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -200,11 +200,11 @@ D                            : 129       : output : 2.5 V             :         
 VCCIO8                       : 130       : power  :                   : 2.5V    : 8         :                
 GND                          : 131       : gnd    :                   :         :           :                
 E                            : 132       : output : 2.5 V             :         : 8         : Y              
-D4                           : 133       : output : 2.5 V             :         : 8         : Y              
+D1                           : 133       : output : 2.5 V             :         : 8         : Y              
 VCCINT                       : 134       : power  :                   : 1.2V    :           :                
-D3                           : 135       : output : 2.5 V             :         : 8         : Y              
-D2                           : 136       : output : 2.5 V             :         : 8         : Y              
-D1                           : 137       : output : 2.5 V             :         : 8         : Y              
+D2                           : 135       : output : 2.5 V             :         : 8         : Y              
+D3                           : 136       : output : 2.5 V             :         : 8         : Y              
+D4                           : 137       : output : 2.5 V             :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 138       :        :                   :         : 8         :                
 VCCIO8                       : 139       : power  :                   : 2.5V    : 8         :                
 GND                          : 140       : gnd    :                   :         :           :                

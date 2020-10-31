@@ -13,7 +13,7 @@
 		output [31:0]  WriteData_DataMem,
 		output			MemWrite,
 		output			MemRead,
-		output reg [31:0] PC
+		output [31:0] PC_out
 		);
   
 		// data bus carrying the current instruction
@@ -53,14 +53,28 @@
 		wire [31:0] ALU_in2;
 		
 		//Program Counter
-		//reg [31:0] PC; 		// Program counter
+		reg [31:0] PC; 		// Program counter
 		
 		wire [31:0] PC_add_1;  // Current PC + 1
 		wire [31:0] PC_BEQ;	  // PC for BEQ instruction
 		wire [31:0] PC_J;	  	  // PC for J instruction
 		wire [31:0] PC_next;	  // Next PC value
 		
-		always @(posedge Clock or posedge Reset) begin
+		initial begin
+			PC <= 0;
+		end
+		
+		/* Update the program counter on the negative edge of the clock.
+			The instruction and control signals propagate through all the 
+			modules and there is a delay before the signals are processed 
+			and the instruction execution is completed in that cycle. To 
+			allow for that delay, update the PC at the end of that clock 
+			cycle to make sure the instruction has completed execution and 
+			the next PC value can be updated. 
+			
+			P.S.: Take note of this during the simulation. Tested and verified on FPGA.
+		*/
+		always @(negedge Clock or posedge Reset) begin
 					
 			if (Reset)
 				PC <= 32'b0;
@@ -124,7 +138,9 @@
 		// Wires out to the Data Memory
 		assign Address_DataMem 	 = ALUResult;
 		assign WriteData_DataMem = ReadData2;
-			
+		
+		// PC Out for simulation purpose
+		assign PC_out = PC;
 		
 		
   endmodule

@@ -75,8 +75,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 320 96)
 		(output)
-		(text "PC[31..0]" (rect 0 0 36 12)(font "Arial" ))
-		(text "PC[31..0]" (rect 263 91 299 103)(font "Arial" ))
+		(text "PC_out[31..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "PC_out[31..0]" (rect 245 91 299 103)(font "Arial" ))
 		(line (pt 320 96)(pt 304 96)(line_width 3))
 	)
 	(drawing

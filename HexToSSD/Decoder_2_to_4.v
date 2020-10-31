@@ -1,6 +1,6 @@
 module Decoder_2_to_4
 	(
-		input 		S0, S1,
+		input  [1:0] Select,	
 		output reg 	D1,
 		output reg  D2,
 		output reg  D3,
@@ -9,7 +9,7 @@ module Decoder_2_to_4
 	
 	always @* begin
 	
-		case ({S1, S0})
+		case (Select)
 		
 			2'b00: begin
 			
@@ -38,7 +38,7 @@ module Decoder_2_to_4
 			
 			end
 			
-			2'b11: begin
+			default: begin
 			
 				D1 = 0;
 				D2 = 0;
